@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
-import './App.css';
-//import * as firebase from 'firebase';
-
-
+import '../../App.css';
+import firebase from '../Firebase/Firebase';
 //ES Modules:
-import firebase from 'firebase/app';
+//import firebase from 'firebase/app';
 import 'firebase/auth';
 
 
@@ -53,8 +51,7 @@ renderLoginButtonG () {
   render() {
     return (
       <div className="App">
-        
-        <div className='holi'>
+        <div className=''>
         <h1>{this.state.users}</h1> 
         {this.renderLoginButtonG()}
         </div>

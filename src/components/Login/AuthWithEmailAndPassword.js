@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
-import './App.css';
-//import * as firebase from 'firebase';
-
-
+import '../../App.css';
+import firebase from '../Firebase/Firebase';
 //ES Modules:
-import firebase from 'firebase/app';
+//import firebase from 'firebase/app';
 import 'firebase/auth';
 
 
@@ -48,11 +46,11 @@ renderLoginButtonE () {
       return(
       // si no está logueado
       <div>
-          
+      <form action="" className="white" >
       <input type='email' id='email' placeholder='email'/>
         <input type='password' id='password' placeholder='password'/>
+        </form>
         <button className="btn pink lighten-1 z-depth-0" onClick={this.handleAuthWithEmailAndPassword}>Ingresar</button>
-        
       </div>
       );
   }
